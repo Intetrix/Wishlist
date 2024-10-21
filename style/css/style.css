@@ -41,4 +41,28 @@ a {
   align-items: center;
   list-style-type: none;
   gap: 40px;
+}
+
+.header_switch-theme {
+  display: flex;
+}
+
+.theme-toggle {
+  background: linear-gradient(to right, #ffffff 50%, #000000 50%);
+  border: 1px solid black;
+  border-radius: 50px;
+  padding: 5px;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  transition: background-color 0.3s ease, justify-content 0.3s ease;
+}
+.theme-toggle img {
+  width: 20px;
+  height: 20px;
+  transition: transform 0.3s ease;
 }/*# sourceMappingURL=style.css.map */
