@@ -21,6 +21,16 @@ a {
   cursor: pointer;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
 .header_container {
   display: flex;
   justify-content: space-between;
@@ -52,8 +62,8 @@ a {
   border: 1px solid black;
   border-radius: 50px;
   padding: 5px;
-  width: 60px;
-  height: 30px;
+  width: 80px;
+  height: 40px;
   position: relative;
   cursor: pointer;
   display: flex;
@@ -62,18 +72,15 @@ a {
   transition: background-color 0.3s ease, justify-content 0.3s ease;
 }
 .theme-toggle img {
-  width: 20px;
-  height: 20px;
+  width: 30px;
+  height: 30px;
   transition: transform 0.3s ease;
-}
-
-.header {
-  position: relative;
-  z-index: 10;
 }
 
 .about-me {
   padding: 40px;
+  margin-top: 70px;
+  scroll-margin-top: 70px;
 }
 
 .about-me__container {
