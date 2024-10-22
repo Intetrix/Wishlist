@@ -115,12 +115,32 @@ a {
     
     .about-me__details {
         display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 15px;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 10px;
 
         h2 {
             margin: 0 0 5px;
-            font-size: 18px;
+            font-size: 15px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+        .about-me__size {
+            grid-column: span 1; /* Занимает одну колонку */
+        }
+
+        .about-me__shoe-size {
+            grid-column: span 1; /* Занимает одну колонку */
+        }
+
+        .about-me__interests {
+            grid-column: span 1; /* Занимает одну колонку */
+        }
+
+        .about-me__other {
+            grid-column: span 1; /* Занимает одну колонку */
         }
     }
 }
