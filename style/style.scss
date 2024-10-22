@@ -130,6 +130,35 @@ a {
     }
 }
 
+.about-me__size, .about-me__shoe-size {
+    position: relative;
+    text-align: center;
+}
+
+.about-me__size p:first-of-type, .about-me__shoe-size p:first-of-type {
+    position: relative;
+    display: inline-block;
+    padding: 0 3px;
+}
+
+.about-me__size p:first-of-type::before, .about-me__size p:first-of-type::after,
+.about-me__shoe-size p:first-of-type::before, .about-me__shoe-size p:first-of-type::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    width: 50px;
+    height: 3px;
+    background-color: black;
+}
+
+.about-me__size p:first-of-type::before, .about-me__shoe-size p:first-of-type::before {
+    left: -60px;
+}
+
+.about-me__size p:first-of-type::after, .about-me__shoe-size p:first-of-type::after {
+    right: -60px;
+}
+
 .wishlist {
     display: flex;
     flex-direction: column;
