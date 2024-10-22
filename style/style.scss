@@ -75,18 +75,6 @@ a {
 .header {
     position: relative;
     z-index: 10;
-
-    &::after {
-        content: "";
-        position: absolute;
-        top: 70px;
-        left: -50vw;
-        right: -50vw;
-        width: 200vw;
-        height: 30px;
-        background: linear-gradient(180deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0.2) 50%, rgba(0,0,0,0) 100%);
-        z-index: 5;
-    }
 }
 
 .about-me {
@@ -155,10 +143,14 @@ a {
     gap: 20px;
     max-width: 1200px; 
     width: 100%;
+    margin: 0 auto;
 }
 
 .wishlist-box__item {
     padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
 }
 
 .wishlist-box__item-img {
@@ -176,6 +168,10 @@ a {
 .wishlist-box__item-content {
     margin-top: 10px;
     text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .wishlist-box__item-title {
