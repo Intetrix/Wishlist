@@ -24,8 +24,8 @@ a {
     color: var(--color-white);
     cursor: pointer;
 }
-/*
-.modalwrapper {
+
+.modal_wrapper {
     height: 100%;
     width: 100%;
     position: absolute;
@@ -46,7 +46,7 @@ a {
     z-index: 9999;
     opacity: .4;
 }
-
+/*
 .modal {
     width: 50%;
     max-width: 500px;
